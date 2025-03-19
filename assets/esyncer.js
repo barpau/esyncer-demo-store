@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           selectVariant(Array.from(priceVariants).find(v => v.getAttribute('orig-value') === '20'));
         } else if (quantity >= 6) {
           selectVariant(Array.from(priceVariants).find(v => v.getAttribute('orig-value') === '6'));
-        } else if (quantity = 1) {
+        } else if (quantity >= 1) {
           selectVariant(Array.from(priceVariants).find(v => v.getAttribute('orig-value') === '1'));
         }
       });
