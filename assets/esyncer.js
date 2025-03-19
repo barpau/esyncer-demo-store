@@ -38,7 +38,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       console.log("Element with class 'esyncer_4over_select_boxes' not found.");
     }
 
-    // Kód pro sledování množství a změnu varianty
+
+  
+
+    // PCNA 
+//Kód pro sledování množství a změnu varianty
     const quantityInput = document.querySelector('input[name="quantity"]');
     if (quantityInput) {
       quantityInput.addEventListener('change', function(e) {
