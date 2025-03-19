@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Přidáme CSS pro skrytí elementu s tier-price variantami
     const style = document.createElement('style');
     style.textContent = `
-        div[option-name*="Tier Price"] {
+        div[option-name*="tier-price"] {
             display: none !important;
         }
     `;
