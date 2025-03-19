@@ -1,5 +1,29 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-   
+    // Přidáme CSS pro skrytí elementu s tier-price variantami
+    const style = document.createElement('style');
+    style.textContent = `
+        div[option-name*="Tier Price"] {
+            display: none !important;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Přidáme CSS pro skrytí celého elementu s variantami cen
+    const style2 = document.createElement('style');
+    style2.textContent = `
+        #swatch-option2 {
+            display: none !important;
+        }
+    `;
+    document.head.appendChild(style2);
+
+    // Přidáme CSS pro skrytí labelu
+    const style3 = document.createElement('style');
+    style3.textContent = `
+        div.swatch-preset-679805 label.swatch-label 
+            display: none !important;
+        }
+    `;
     document.head.appendChild(style3);
 
     // Check if an element with the class "esyncer_4over_select_boxes" exists
