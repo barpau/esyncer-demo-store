@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Přidáme CSS pro skrytí elementu s tier-price variantami
     const style = document.createElement('style');
     style.textContent = `
-        div[option-name*="tier-price"] {
+        div[option-name*="Tier Price"] {
             display: none !important;
         }
     `;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Přidáme CSS pro skrytí labelu
     const style3 = document.createElement('style');
     style3.textContent = `
-        div.swatch-preset-679805 label.swatch-label {
+        div.swatch-preset-679805 label.swatch-label 
             display: none !important;
         }
     `;
