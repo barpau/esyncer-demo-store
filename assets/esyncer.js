@@ -1,21 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    // Přidáme CSS pro skrytí elementu s tier-price variantami
-    const style = document.createElement('style');
-    style.textContent = `
-        div[option-name*="Tier Price"] {
-            display: none !important;
-        }
-    `;
-    document.head.appendChild(style);
-
-    // Přidáme CSS pro skrytí celého elementu s variantami cen
-    const style2 = document.createElement('style');
-    style2.textContent = `
-        #swatch-option2 {
-            display: none !important;
-        }
-    `;
-    document.head.appendChild(style2);
+    
 
     // Přidáme CSS pro skrytí labelu
     const style3 = document.createElement('style');
@@ -40,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // PCNA 
     // Kód pro sledování množství a změnu varianty
+    if(false){
     const quantityInput = document.querySelector('input[name="quantity"]');
     if (quantityInput) {
         quantityInput.addEventListener('change', function(e) {
@@ -132,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     } else {
         console.log("Input pro množství produktu nebyl nalezen");
     }
+}
 });
 
 
