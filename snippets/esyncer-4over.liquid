@@ -65,8 +65,14 @@
       </div>
       <div class="input-wrapper">
       <label for="country">Country</label>
-      <input class="form-control" type="text" id="country-select" name="customer[country]" placeholder="Country" required>
-      
+       <select id="country-select" name="customer[country]" required>
+              <option value="US">United States</option>    
+          </select>
+      </div>
+      <div class="input-wrapper">
+      <label for="city">City</label>
+      <input type="text" id="city" name="customer[city]" placeholder="e.g. New York" required>
+    </div>
     </div>
       <div class="input-wrapper">
       <label for="zip-code">Zip code</label>
